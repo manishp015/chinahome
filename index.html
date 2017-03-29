@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .fp-controlArrow {
+
+            margin-top: -80px;
+        }
+    </style>
+    <title>AMCAT - Recruiter interface</title>
+    <script
+            src="assets/js/jquery.js"
+            ></script>
+    <script src="assets/js/landingpageHome.js"></script>
+   <script src="assets/js/jquery.bxslider.min.js"></script>
+    <script src="assets/js/jquery.floatingscroll.js"></script>
+    <script src="assets/js/jquery.fullPage.js"></script>
+    <!--<script src="assets/js/jquery.landingpage.js"></script> -->
+    <script src="assets/js/landingpage.js"></script>
+    <script src="assets/js/jquery.iassess.js"></script>
+    <script src="assets/js/jquery.floatingscroll.js"></script>
+    <link rel="stylesheet" href="assets/css/landing-page.css">
+    <link rel="stylesheet" href="assets/css/footerStyle.css">
+    <link rel="stylesheet" href="assets/css/jquery.floatingscroll.css">
+    <link rel="stylesheet" href="assets/css/jquery.bxslider.css">
+    <link rel="stylesheet" href="assets/global.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/jquery.fullPage.css">
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+</head>
+<body>
+
+<div class="home">
+    <div id="header" class="header">
+        <div class="section-inner">
+            <a href="./" style="cursor: pointer;"><img class="header-logo" src="assets/images/amcat-logo-01.png" alt="AMCAT iAssess Portal"/></a>
+            <div class="header-btn">
+               <!-- <button class="btn btn-secondary-sm btn-login" ng-click="showlogin = !showlogin">Login</button> -->
+                <button class="btn btn-primary btn-signup" style="font-size: 16px;    padding: 0 21px;" ng-click="showlogin = false">注册账户</button>
+            </div>
+        </div>
+    </div>
+    <a  onclick="openVideo()" style="cursor: pointer"><div class="learn-more"></div></a>
+    <a onclick="goToSignup()" id="show_signup" style="cursor: pointer; display: block;"><div style="background-color: rgb(221, 0, 31);top:15%;" class="contact-icon contact-signup signupicon"></div></a>
+    <!--       <div class="section-bg section-bg-1 active">
+                               <div class="section-inner">
+                                   <h2 class="animate anim-show">AMCAT</h2>
+                                   <h3 class="animate anim-show">State of art AMCAT assessment tools to evaluate talent for 100s of job roles - accurately, reliably and with exemplary validity!</h3>
+                                </div>
+           </div>
+           <div class="section-bg section-bg-2"></div>
+            <div class="section-bg section-bg-3"></div>
+           <div class="section-bg section-bg-4"></div>
+           <div class="section-bg section-bg-5"></div>  -->
+    <div id="fullpage">
+        <!-- Section 1 -->
+
+
+        <div class="section fade-section section-1">
+
+            <div class="slides" style="height:100%" >
+
+                <div class="slide" style="background-size: cover;background-image: url(assets/images/bg-image-1-01.jpg);">
+
+                    <div class="section-inner">
+                        <h2 class="animate anim-show">AMCAT</h2>
+                        <h3 class="animate anim-show">一系列先进的测评工具，通过范例效度验证，为数百种工作岗位提供准确、高效的人才评估和匹配建议！</h3>
+                        <img class="scroll-icon floating" src="assets/images/scroll button-01.png" style="bottom: -89px !important"/>
+                    </div>
+                </div>
+
+
+
+                <div class="slide" style=" background-size: cover; background-image: url(assets/images/bg-image-3-01.jpg);">
+                    <div class="section-inner" >
+                        <h2 class="animate">AMCAT</h2>
+                        <h3 class="animate">面试过程耗时耗力且难以安排</h3>
+                    </div>
+                    <div class="section-box left-box">
+                        <img src="assets/images/fold3-icon-01.png" class="box-icon"/>
+                        <div class="box-title"></div>
+                        <div class="box-body">
+                            您知道吗？超过40%的面试时间花在了那些简历尚可却并没有必备工作技能的候选人身上。
+                        </div>
+                    </div>
+                    <img class="scroll-icon floating" src="assets/images/scroll button-01.png"/>
+
+
+                </div>
+                <div class="slide" style=" background-size: cover; background-image: url(assets/images/bg-image-4-01.jpg);">
+                    <div class="section-inner" >
+                        <h2 class="animate">AMCAT</h2>
+                        <h3 class="animate">招聘过程充满主观判断，经常前后矛盾，难以预测未来绩效。</h3>
+                    </div>
+                    <div class="section-box right-box">
+                        <img src="assets/images/fold4-icon-01.png" class="box-icon"/>
+                        <div class="box-title"></div>
+                        <div class="box-body">
+                            您知道吗？30%的年度工资花在了那些并不适合的聘用上面。
+                        </div>
+                    </div>
+                    <img class="scroll-icon floating" src="assets/images/scroll button-01.png"/>
+
+                </div>
+                <div class="slide" style=" background-size: cover; background-image: url(assets/images/bg-image-5-01.jpg);">
+                    <div class="section-inner" >
+                        <h2 class="animate">AMCAT</h2>
+                        <h3 class="animate">很遗憾，我们似乎没法评估所有申请者，最后却错失了真正适合的那些候选人。</h3>
+                    </div>
+
+                    <div class="section-box left-box">
+                        <img src="assets/images/fold5-icon-01.png" class="box-icon"/>
+                        <div class="box-title"></div>
+                        <div class="box-body">
+                            您知道吗？超过30%的合格候选人在传统招聘过程中被淘汰。
+                        </div>
+                    </div>
+
+
+
+                    <img class="scroll-icon floating" src="assets/images/scroll button-01.png"/>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Section 6 -->
+        <div class="section section-6">
+            <div class="section-inner table">
+                <div class="table-cell">
+                    <p>Aspiring Minds为您带来AMCAT人才评估综合解决方案，帮助您为各岗位匹配最适合的人才</p>
+                    <ul class="feature-list hlist">
+                        <li style="border: none;">&nbsp;</li>
+                        <li style="border: none;">&nbsp;</li>
+                        <li style="border: none;">&nbsp;</li>
+                        <li>自适应</li>
+                        <li>高信度</li>
+                        <li>标准化</li>
+                        <li class="last">高效度</li>
+                    </ul>
+                    <p>核心技术</p>
+                    <ul class="icon-list hlist">
+                        <li>
+                            <span class="icon icon-1"></span>
+                            项目反应理论</li>
+                        <li>
+                            <span class="icon icon-2"></span>
+                            机器学习</li>
+                        <li>
+                            <span class="icon icon-3"></span>
+                            心理测量学</li>
+                    </ul>
+
+
+
+
+
+                    <div  class="slides"  style="position:absolute; margin-top: 25px;">
+                        <div class="slide ">
+
+
+                            <img  class="thumb" src="assets/images/clients-01.png" />
+                        </div>
+                        <div class="slide ">
+
+
+                            <img  class="thumb" src="assets/images/clients-02.png" />
+                        </div>
+                        <div class="slide ">
+
+
+                            <img  class="thumb" src="assets/images/clients-03.png" />
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- Section 7 -->
+        <div class="section section-7">
+            <div class="section-inner table">
+                <div class="table-cell">
+                    <h2>制定人才衡量基准，<br/>高效预测工作绩效</h2>
+                    <p>现在就可以联系我们的专家，帮您定制招聘衡量基准，<br/>预测未来绩效！</p>
+                    <ul class="icon-list hlist">
+                        <li>
+                            <span class="icon icon-1"></span>
+                            <strong>认知能力</strong>
+                            在组织中学习和成长的能力
+                        </li>
+                        <li>
+                            <span class="icon icon-2"></span>
+                            <strong>语言能力</strong>
+                            熟练驾驭语言的能力
+                        </li>
+                        <li>
+                            <span class="icon icon-3"></span>
+                            <strong>行为特征</strong>
+                            工作中的团队协作与沟通能力
+                        </li>
+                        <li>
+                            <span class="icon icon-4"></span>
+                            <strong>专业技能</strong>
+                            特定领域的知识和技能
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section-wedge"></div>
+        </div>
+        <div class="section section-8 fp-auto-height " >
+            <div class="section-inner table">
+                <div class="table-cell">
+                    <h2>OUR PRODUCTS</h2>
+                    <ul class="icon-list hlist" style="margin-left: 2%;">
+                        <li style="margin: 0 3%;">
+                            <span class="producticon icon-11"></span>
+                            <strong>AMCAT</strong>
+                            自适应性职业能力测试 - 一个基于项目反应理论的自适应在线测试平台。
+                        </li>
+                        <li style="margin: 0 3%;">
+                            <span class="producticon icon-22"></span>
+                            <strong>AUTOMATA</strong>
+                            编程能力测试-机器学习技术为核心，全球最智能的编程能力自动化测试。
+                        </li>
+                        <li style="">
+                            <span class="producticon icon-33"></span>
+                            <strong>SVAR</strong>
+                            思唯英语口语自动化测试-采用声音识别与合成技术，自动化评估英语口语能力。
+                        </li>
+
+                    </ul>
+                    <ul class="icon-list hlist" style="margin-left: 2%;">
+                        <li style="margin: 0 3%;">
+                            <span class="producticon icon-44"></span>
+                            <strong>销售能力测试</strong>
+                            综合评估候选人的销售潜力，性格与技巧。
+                        </li>
+                        <li style="margin: 0 3%;">
+                            <span class="producticon icon-55"></span>
+                            <strong>Automata Data Science</strong>
+                            编程能力测试(Data Science)- 资深数据科学与机器学习从业者研发的编程能力自动化测试
+                        </li>
+                        <li >
+                            <span class="producticon icon-66"></span>
+                            <strong>AM Testathon</strong>
+                            
+为企业举办各类Hackathon赛事提供题目定制与解决方案。
+                        </li>
+
+                    </ul>
+                    <h2>随时随地交付测评，安全可靠！</h2>
+                    <p>
+                        自动化在线监考，确保随时随地管理测评。AMCAT兼容智能手机和平板电脑交付测评，提供全天候客服支持。
+                    </p>
+                    <ul class="icon-list hlist">
+                        <li>
+                            <span class="icon icon-1"></span>
+                            <strong>移动化</strong>
+                            真正实现随时随地展开测评
+                        </li>
+                        <li>
+                            <span class="icon icon-2"></span>
+                            <strong>云服务</strong>
+                            全球部署，流畅交付
+                        </li>
+                        <li>
+                            <span class="icon icon-3"></span>
+                            <strong>自动监考</strong>
+                            确保测评公正性
+                        </li>
+                        <li>
+                            <span class="icon icon-4"></span>
+                            <strong>在线监控</strong>
+                            每场测试都可实现在线监控和记录
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section section-9">
+            <div class="section-8-ofw"></div>
+            <div class="section-inner table">
+                <div class="table-cell">
+                    <div class="form">
+                        <p>免费注册一个账户并联系我们的考试专家，就能了解针对各类岗位的测评方案和分数线划定基准</p>
+                        <p ><span  id="successMessage" style="color:green;display:none;"  >感谢与我们联系。我们将尽快回复您！</span></p>
+
+                        <p><span style="color:red;display: none;" ng-show = "signUpFailed">We already have an account for you. Please login or reset your password!</span></p>
+                        <p><img style="color:green;display:none;" class="loading-md ng-hide" src="assets/images/loading.gif" ng-show = "showSignUpLoading"></p>
+
+
+                        <h3>现在开始</h3>
+                        <form name="signUpForm">
+                            <div class="input-row">
+                                <div class="input-col">
+                                    <label>姓名 *</label>
+                                    <div class="input-box">
+                                        <input name="name" id="Formname"  type="text" autocomplete="off"  class="text" required />
+                                        <span id="errorname" style="color:green;display:none;height: 0px;" >无效的名称!</span>
+
+                                    </div>
+                                </div>
+                                <div class="input-col last-col">
+                                    <label>公司 *</label>
+                                    <div class="input-box">
+                                        <input name="org" type="text" autocomplete="off"  id="organisationId" class="text" required />
+										<span id="errororg" style="color:green;display:none;height: 0px;">
+无效或空组织名称！</span>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="input-row">
+                                <div class="input-col">
+                                    <label>电子邮箱 *</label>
+                                    <div class="input-box">
+                                        <input name="email" id="emailId"   type="email" class="text" required />
+                                        <span id="erroremail" style="color:green;display:none;height: 0px;">此邮箱地址无效</span>
+                                    </div>
+                                </div>
+                                <div class="input-col last-col">
+                                    <label>职位</label>
+                                    <div class="input-box">
+                                        <input name="desig" id="desigId" type="text" autocomplete="off"  class="text" required />
+										<span id="errordesig" style="color:green;display:none;height: 0px;">无效或空指定！</span>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="input-row">
+                                <div class="input-col">
+                                    <label>国家 *</label>
+                                    <div class="input-box">
+                                        <select id="countryId" name="country" class="text"  required>
+                                            <option value="CN"  selected>China</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="input-col how-box last-col">
+                                    <label>您通过什么渠道知道我们</label>
+                                    <div class="input-box">
+                                        <select name="how" class="text" id="sourceId">
+                                            <option value = "Search Engine">网络搜索</option>
+                                            <option value = "Social Network">社交网络</option>
+                                            <option value = "Advertisement">广告</option>
+                                            <option value = "Forum/Blog">论坛／博客</option>
+                                            <option value = "Through sales team">销售人员介绍</option>
+                                            <option value = "Others">其它</option>
+
+
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="input-row">
+                                <div class="input-col">
+                                    <label>移动电话</label>
+                                    <div class="input-box">
+                                        <div class="code-box">
+                                            <input name="code" id="mobilecodeId" type="text" pattern="[0-9]{3}"  class="text code-text form-control" required  >
+                                            <span  style="color:red;display: none;height: 0px;" id="invalidCodeError">此国家代码无效</span>
+                                        </div>
+                                        <div class="mob-box">
+                                            <input  name="mobile" type="text"  pattern= pattern="[0-9]{3}"  autocomplete="off"  id="mobilenoId" class="text mob-text form-control"  required >
+                                            <span  style="color:red;display: none;height: 0px;" id="invalidMobId">此手机号码无效</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-col last-col">
+                                    <button id="submitbutton"class="btn btn-primary "  >
+                                        <div class="disabled-overlay"></div>
+                                        注册账户
+                                    </button>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="home-footer">
+
+            </div>
+        </div>
+
+
+
+
+
+        <div class="section fp-auto-height" id="section-footer">
+
+
+
+
+            <div class="footer-main pull-left" style="margin-top: 50px;">  	<div class="section-inner">
+
+
+
+
+
+
+
+
+                <div class="footer-rep-cont-last" style="margin-left: 34%;">
+                    <div class="poweredby"><div>
+                        <span>Powered By</span>
+                        <img src="https://s3.amazonaws.com/myamcatimages/new_images/footer_logo.png" alt=""></div>
+                        <div class="copyright">2016-2017 &copy; All rights reserved Aspiring Minds Assessment Pvt. Ltd</div></div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+            </div>  	   </div>
+
+
+    </div>
+    <div id="video-popup" class="popup-wrapper" onclick="hideVideoPopup()" style="display: none;" >
+        <div class="overlay"></div>
+        <div id="videoPopup" class="popup-content ng-pristine ng-untouched ng-valid" >
+            <!-- ngIf: lang=='en' -->
+            <!-- ngIf: lang=='zh' --><div class="popup-zh ng-scope" style="padding: 10px;background-color: black" >
+
+            <object><param name="movie" value="http://share.vrs.sohu.com/my/v.swf&amp;topBar=1&amp;id=83681494&amp;autoplay=false&amp;from=page"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><param name="wmode" value="Transparent"><embed allowfullscreen="true" allowscriptaccess="always" style="height: 400px;width: 500px;" id="youtube_video" quality="low" src="http://share.vrs.sohu.com/my/v.swf&amp;topBar=1&amp;id=83681494&amp;autoplay=false&amp;from=page" type="application/x-shockwave-flash"></object>
+            <div class="clear"></div>
+        </div><!-- end ngIf: lang=='zh' -->
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+</div>
+
+</body>
+
+</html>
